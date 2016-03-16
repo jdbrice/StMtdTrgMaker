@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<job maxFilesPerProcess="1" filesPerHour="600" fileListSyntax="paths" simulateSubmission="false">
+	<command>
+		starver dev
+
+		root4star -b -q -l 'TDFReader.C( "'$INPUTFILE0'", "'$INPUTFILE0'.root", 10000000 )' &gt;&amp; log_$JOBINDEX.log
+	</command>
+
+	<stdout URL="file:/star/data03/pwg/jdb/scratch/log/$JOBID.out" />
+	<stderr URL="file:/star/data03/pwg/jdb/scratch/log/$JOBID.err" />
+	<input URL="filelist:/star/u/jdb/work/TriggerData/plan_b_timing.lis" nFiles="600"/>
+	    <output fromScratch="*" toURL="file:/star/data03/pwg/jdb/trigger/plan_b_timing/" />
+	<SandBox>
+ 		<Package>
+ 			<File>file:./TDFReader.C</File>
+ 			<File>file:./.sl64_gcc482/</File> 
+ 		</Package> 
+ 	</SandBox>
+
+	<Generator> 
+ 		<Location>/star/data03/pwg/jdb/scratch/gen</Location> 
+ 	</Generator> 
+</job>

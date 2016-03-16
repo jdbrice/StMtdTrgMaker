@@ -1,0 +1,6 @@
+*.root
+*.log
+*.lis
+*.py
+*.sh
+.sl64_gcc482
