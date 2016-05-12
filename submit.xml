@@ -8,8 +8,8 @@
 
 	<stdout URL="file:/star/data03/pwg/jdb/scratch/log/$JOBID.out" />
 	<stderr URL="file:/star/data03/pwg/jdb/scratch/log/$JOBID.err" />
-	<input URL="filelist:/star/u/jdb/work/TriggerData/plan_b_timing.lis" nFiles="600"/>
-	    <output fromScratch="*" toURL="file:/star/data03/pwg/jdb/trigger/plan_b_timing/" />
+	<input URL="filelist:/star/u/jdb/work/TriggerData/run17076052B.lis" nFiles="600"/>
+	    <output fromScratch="*" toURL="file:/star/data03/daq/jdb/run16_auau200/dat/" />
 	<SandBox>
  		<Package>
  			<File>file:./TDFReader.C</File>

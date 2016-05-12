@@ -4,3 +4,7 @@
 *.py
 *.sh
 .sl64_gcc482
+
+*.session.xml
+*.dataset
+temp_gccflags.c
